@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manşet Tüneli: Dün & Bugün</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- İkonlar için FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <h1><i class="fa-solid fa-newspaper"></i> Manşet Tüneli</h1>
+            <p>Bugünün tarihiyle son 20 yılın manşetlerini karşılaştırın.</p>
+            
+            <div class="date-picker-container">
+                <label for="dateInput">Tarih Seç:</label>
+                <input type="date" id="dateInput">
+            </div>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <button class="cat-btn active" data-category="all">Genel Bakış</button>
+        <button class="cat-btn" data-category="economy">Ekonomi</button>
+        <button class="cat-btn" data-category="education">Eğitim</button>
+        <button class="cat-btn" data-category="culture">Kültür & Sanat</button>
+    </nav>
+
+    <main class="container">
+        <!-- Analiz ve İroni Bölümü -->
+        <section id="analysis-section" class="analysis-card">
+            <h3><i class="fa-solid fa-bolt"></i> Günün Bağlamı ve İronisi</h3>
+            <p id="analysis-text">Veriler yükleniyor...</p>
+        </section>
+
+        <!-- Timeline Bölümü -->
+        <section id="timeline-container" class="timeline">
+            <!-- JavaScript ile buraya içerik dolacak -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Bu proje GitHub Pages üzerinde host edilmektedir. Veriler örnek amaçlıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
